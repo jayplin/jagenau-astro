@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { useNow } from '@vueuse/core'
-import { NButton } from 'naive-ui'
+import pkg from 'naive-ui';
+const { NButton } = pkg;
 
 
 const count = ref(0);
