@@ -9,7 +9,6 @@ const count = ref(0);
 const add = () => (count.value = count.value + 1);
 const subtract = () => (count.value = count.value - 1);
 
-const now = useNow()
 </script>
 	
 <template>
@@ -17,7 +16,6 @@ const now = useNow()
 		<NButton @click="subtract()">-</NButton>
 		<pre>{{ count }}</pre>
 		<button @click="add()">+</button>
-		{{ now }}
 	</div>
 	<div class="counter-message">
 		<slot />
