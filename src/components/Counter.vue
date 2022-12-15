@@ -4,7 +4,6 @@ import { useNow } from '@vueuse/core'
 import { NButton } from 'naive-ui'
 
 
-
 const count = ref(0);
 const add = () => (count.value = count.value + 1);
 const subtract = () => (count.value = count.value - 1);
@@ -14,7 +13,7 @@ const now = useNow()
 	
 <template>
 	<div class="counter">
-		<n-button @click="subtract()">-</n-button>
+		<NButton @click="subtract()">-</NButton>
 		<pre>{{ count }}</pre>
 		<button @click="add()">+</button>
 		{{ now }}
