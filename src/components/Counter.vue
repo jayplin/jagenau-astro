@@ -13,7 +13,7 @@ const subtract = () => (count.value = count.value - 1);
 	
 <template>
 	<div class="counter">
-		<NButton @click="subtract()">-</NButton>
+		<n-button @click="subtract()">-</n-button>
 		<pre>{{ count }}</pre>
 		<button @click="add()">+</button>
 	</div>
